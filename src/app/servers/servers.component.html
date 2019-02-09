@@ -27,5 +27,5 @@
   </p>
 </ng-template>
 <!-- We can style elements with ngStyle directive as well!-->
-<app-server></app-server>
-<app-server></app-server>
+<!-- ngFor directive to replicate DOM elements. -->
+<app-server *ngFor="let server of servers"></app-server>
