@@ -1,0 +1,10 @@
+<!-- This is String interpolation with the {{ variable }} notation -->
+<!-- We need to use the ngStyle directive with property binding-->
+<!-- ngClass allows us to dynamically add or remove CSS classes-->
+<!-- for ngClass we have key-value pair, where the key is the CSS class-->
+<!-- and the value is true of false.-->
+<p 
+    [ngStyle]="{backgroundColor: getColor()}"
+    [ngClass]="{online: serverStatus === 'online'}">
+    Server with ID {{ getServerId() }} is {{ getServerStatus() }}
+</p>
